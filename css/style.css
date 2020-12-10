@@ -49,7 +49,7 @@ body {
 }
 
 .img-user {
-    width: 90%;
+    width: 100%;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -64,23 +64,146 @@ body {
     align-items: center;
 }
 
+
+/*===================
+        FORM 
+===================*/
+
 #form {
-    width: 90%;
+    width: 320px;
     height: 500px;
-    background-color: #7a9fe4;
+    background-color: #dbdbdb;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
-.form-group {
-    width: 360px;
-    height: 100px;
-    background-color: #7dc0b5;
+.dato-form {
+    width: 100%;
+    height: 90px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
 }
 
-.form-group p {
+.lbl-form {
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    color: #9b9b9b;
+    position: absolute;
+    bottom: 18px;
+    z-index: 1;
+}
+
+.input-form {
+    width: 100%;
+    height: 50px;
+    background-color: #dbdbdb00;
+    border: 2px solid #dbdbdb;
+    box-shadow: inset 4px 4px 8px #0000004b, inset -4px -4px 8px #ffffff4b;
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.input-form:focus {
+    outline: none !important;
+}
+
+.line-form {
+    width: 100%;
+    height: 3px;
+    background-color: #303030;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    z-index: 3;
+}
+
+.forgot-form {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.forgot-form p {
+    font-size: .9em;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.forgot-form p:hover {
+    text-decoration: underline;
+}
+
+.enviar-form {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbdb;
+    border: 3px solid #dbdbdb;
+    box-shadow: 4px 4px 8px #0000004b, -4px -4px 8px #ffffff4b;
+    transition: .3s ease-in;
+}
+
+.enviar-form:hover {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21;
+}
+
+.enviar-form:active {
+    box-shadow: 4px 4px 8px #00000021, -4px -4px 8px #ffffff21, inset 4px 4px 8px #00000021, inset -4px -4px 8px #ffffff21;
+}
+
+.btn-form {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-form input {
+    width: 100%;
+    height: 100%;
+    background-color: #dbdbdb;
+    border: 2px solid #e4e4e400;
     font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*===========
+    QUERY
+===========*/
+
+@media (max-width: 748px) {
+    .img-backgroung {
+        display: none;
+    }
+    .form-container {
+        width: 100%;
+        right: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    #form {
+        width: 90%;
+    }
 }
