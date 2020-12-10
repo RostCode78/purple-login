@@ -3,3 +3,84 @@
     margin: 0;
     font-family: sans-serif;
 }
+
+body {
+    background-color: #dbdbdb;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* IMG BACKGROUND */
+
+.img-backgroung {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+}
+
+.img-backgroung img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FORM CONTAINER */
+
+.form-container {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 5%;
+}
+
+.img-user {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-user img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 90%;
+    height: 500px;
+    background-color: #7a9fe4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 360px;
+    height: 100px;
+    background-color: #7dc0b5;
+    position: relative;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
